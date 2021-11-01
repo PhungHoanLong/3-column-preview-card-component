@@ -1,0 +1,138 @@
+body
+{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bg-content
+{
+    background-color: hsl(0, 0%, 95%);
+}
+
+.sub-content > h1, .sub-content > a:hover > button
+{
+    color: hsl(0, 0%, 95%);
+}
+
+.sub-content > h1
+{
+    text-transform: uppercase;
+}
+
+.sub-content > p
+{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+}
+
+.sedans
+{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sedans > a > button
+{
+    color: hsl(31, 77%, 52%);
+    font-weight: 600;
+}
+
+.sedans > a:hover
+{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs, .suvs > a:hover
+{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs > a > button
+{
+    color: hsl(184, 100%, 22%);
+    font-weight: 600;
+}
+
+.luxury
+{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.luxury > a > button
+{
+    color: hsl(179, 100%, 13%);
+    font-weight: 600;
+}
+
+.luxury > a:hover
+{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.sub-content > a
+{
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color:  hsl(0, 0%, 95%);
+    padding: 10px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.sub-content > a > button
+{
+    margin: 50px 0 0;
+    border: none;
+    cursor: pointer;
+    background-color: unset;
+}
+
+.content
+{
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 100px 0;
+}
+
+.sub-content
+{
+    padding: 50px 40px;
+    height: 320px;
+}
+
+@media only screen and (max-width: 800px) 
+{
+    .content
+    {
+        display: block;
+        max-width: 375px;
+    }
+    
+    .sedans
+    {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    .luxury
+    {
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+
+    .sub-content
+    {
+        padding: 50px;
+        height: 300px;
+    }
+
+    .sub-content > a
+    {
+        padding: 15px 40px;
+    }
+}
